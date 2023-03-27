@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-control {
+    @apply p-4 pl-12.2 text-lg leading-5.5 rounded-2xl bg-transparent border border-waterpark border-solid text-cold-front-green block w-full focus:outline-none
+  }
+
+
+
+  .label {
+    @apply text-waterpark text-lg leading-5.5 tracking-wide-1 mb-3 inline-block
+  }
+
+  .form-wrap {
+    @apply flex items-center relative
+  }
+
+  .icon {
+    @apply absolute w-6 h-6 left-4 top-1/2 -translate-y-1/2
+  }
+
+  .input-wrapper {
+    @apply w-14 h-14 flex bg-white-gray-2 rounded-1.5xl
+  }
+
+  .input-wrap {
+    @apply bg-transparent text-center w-full text-lg leading-5.5 capitalize text-input-placeholder
+  }
+
+  .input-wrap::placeholder {
+    @apply text-input-placeholder opacity-40 text-lg leading-5.5 capitalize
+  }
+  .sidebar-nav--item{
+    @apply pl-3 pr-2 py-3.5 rounded-1.5xl
+  }
+}
+
+
+@font-face {
+  font-family: 'CabinetGrotesk-Regular';
+  src: url('../fonts/CabinetGrotesk-Regular.eot');
+  src: url('../fonts/CabinetGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
+    url('../fonts/CabinetGrotesk-Regular.woff') format('woff'),
+    url('../fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Black';
+  src: url('../fonts/CabinetGrotesk-Black.eot');
+  src: url('../fonts/CabinetGrotesk-Black?#iefix') format('embedded-opentype'),
+    url('../fonts/CabinetGrotesk-Black.woff2') format('woff2'),
+    url('../fonts/CabinetGrotesk-Black.woff') format('woff'),
+    url('../fonts/CabinetGrotesk-Black.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Bold';
+  src: url('../fonts/CabinetGrotesk-Bold.eot');
+  src: url('../fonts/CabinetGrotesk-Bold?#iefix') format('embedded-opentype'),
+    url('../fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
+    url('../fonts/CabinetGrotesk-Bold.woff') format('woff'),
+    url('../fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
