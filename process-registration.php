@@ -13,6 +13,7 @@
 			} elseif($password != $confirm_password) {
 				echo "<p style='color:red;'>Password and confirm password do not match.</p>";
 			} else {
-				echo "<p style='color:green;'>Registration successful!</p>";
+				echo "<p style='color:green;'>Registration successful!</p> <a href='login.php'>Click here to visit the login page</a>";
+                
 			}
 		}
